@@ -168,6 +168,11 @@
 </footer>
 
 <a class="wa-float" href="https://wa.me/17866944178" aria-label="WhatsApp">💬</a>
+<script>
+document.querySelectorAll('section,.cta-band,.trust').forEach(el=>el.classList.add('fade-in'));
+const ob=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ob.unobserve(e.target)}})},{threshold:.08});
+document.querySelectorAll('.fade-in').forEach(el=>ob.observe(el));
+</script>
 <script src="https://fareharbor.com/embeds/api/v1/?autolightbox=yes" defer></script>
 </body>
 </html>
