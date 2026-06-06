@@ -6,6 +6,21 @@
       "source": "/book",
       "destination": "https://fareharbor.com/embeds/book/miamistylerentals/items/339925/?full-items=yes",
       "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact/:path*",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/:section/f/:slug*",
+      "destination": "/:section",
+      "permanent": true
     }
   ],
   "headers": [
