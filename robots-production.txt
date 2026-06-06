@@ -1,0 +1,5 @@
+# Versión de PRODUCCIÓN — usar al hacer el cutover de DNS (renombrar a robots.txt)
+User-agent: *
+Allow: /
+
+Sitemap: https://slingshotmia.com/sitemap.xml

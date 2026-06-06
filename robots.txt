@@ -1,0 +1,4 @@
+# TEMPORAL: este robots.txt bloquea todo mientras el sitio está en revisión.
+# En el cutover, reemplazar por la versión de producción (ver robots-production.txt)
+User-agent: *
+Disallow: /
