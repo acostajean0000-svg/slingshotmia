@@ -1,7 +1,7 @@
 :root{
-  --bg:#0a0a0a;--bg2:#0f0f0f;--card:#141414;--border:#232323;--border-g:rgba(74,222,128,.35);
+  --bg:#0a0a0a;--bg2:#0f0f0f;--card:#141414;--border:#232323;--border-g:rgba(255,122,0,.35);
   --text:#f5f5f5;--muted:#9ca3af;--white:#fff;
-  --green:#4ade80;--green-d:#22c55e;--green-btn:#34a853;--radius:16px;
+  --green:#ff7a00;--green-d:#ea580c;--green-btn:#f97316;--radius:16px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -26,12 +26,12 @@ nav a:hover,nav a.active{color:var(--green);background:#161616}
 .head-cta{display:flex;align-items:center;gap:.9rem}
 .head-phone{color:var(--text);font-weight:600;font-size:.9rem}
 .btn{display:inline-block;background:var(--green-btn);color:#fff;font-weight:700;padding:.8rem 1.7rem;border-radius:99px;font-size:.95rem;margin:.25rem;transition:transform .15s,box-shadow .15s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(52,168,83,.35)}
-.btn.alt{background:rgba(74,222,128,.12);color:var(--green);border:1.5px solid var(--green-d)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(249,115,22,.35)}
+.btn.alt{background:rgba(255,122,0,.12);color:var(--green);border:1.5px solid var(--green-d)}
 .btn.sm{padding:.5rem 1.2rem;font-size:.82rem;margin:0}
 
 /* HERO */
-.hero{background:radial-gradient(ellipse 80% 60% at 70% 20%,rgba(34,197,94,.08) 0%,transparent 60%),var(--bg)}
+.hero{background:radial-gradient(ellipse 80% 60% at 70% 20%,rgba(255,122,0,.08) 0%,transparent 60%),var(--bg)}
 .hero-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding:4.5rem 1rem 3.5rem}
 @media(max-width:860px){.hero-grid{grid-template-columns:1fr;padding-top:2.5rem}}
 .eyebrow{color:var(--green);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.78rem;margin-bottom:1rem}
@@ -43,7 +43,7 @@ nav a:hover,nav a.active{color:var(--green);background:#161616}
 .stars span{color:var(--text)}
 .hero-meta{color:var(--muted);font-size:.88rem;margin-top:.8rem}
 .hero-meta a{color:var(--text);font-weight:600}
-.hero-visual{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--border-g);box-shadow:0 0 70px rgba(34,197,94,.15)}
+.hero-visual{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--border-g);box-shadow:0 0 70px rgba(255,122,0,.15)}
 .hero-visual img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
 
 /* TRUST BAR */
@@ -67,10 +67,10 @@ h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--white)}
 .rates-head{display:grid;grid-template-columns:1.4fr 1fr 1fr;padding:.9rem 1.6rem;border-bottom:1px solid var(--border);color:var(--muted);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase}
 .rate-row{display:grid;grid-template-columns:1.4fr 1fr 1fr;align-items:center;padding:1.05rem 1.6rem;border-bottom:1px solid var(--border);color:inherit;transition:background .15s}
 .rate-row:last-child{border-bottom:none}
-.rate-row:hover{background:rgba(74,222,128,.05)}
-.rate-row.hl{background:rgba(74,222,128,.06)}
+.rate-row:hover{background:rgba(255,122,0,.05)}
+.rate-row.hl{background:rgba(255,122,0,.06)}
 .rate-dur{font-weight:700;color:var(--white);display:flex;align-items:center;gap:.6rem;flex-wrap:wrap}
-.badge{background:rgba(74,222,128,.15);color:var(--green);font-size:.62rem;font-weight:800;letter-spacing:.08em;padding:.22rem .6rem;border-radius:99px;border:1px solid var(--border-g)}
+.badge{background:rgba(255,122,0,.15);color:var(--green);font-size:.62rem;font-weight:800;letter-spacing:.08em;padding:.22rem .6rem;border-radius:99px;border:1px solid var(--border-g)}
 .rate-price{font-size:1.45rem;font-weight:800;color:var(--white);text-align:center}
 .rate-row.hl .rate-price{color:var(--green)}
 .rate-hr{color:var(--muted);font-size:.85rem;text-align:right}
@@ -78,15 +78,15 @@ h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--white)}
 @media(max-width:640px){.rates-head{display:none}.rate-row{grid-template-columns:1fr auto;gap:.2rem}.rate-hr{display:none}}
 
 /* BOOKING EMBED */
-.fh-embed-wrap{max-width:1020px;margin:auto;background:#fff;border:1px solid var(--border-g);border-radius:var(--radius);overflow:hidden;box-shadow:0 0 60px rgba(34,197,94,.1)}
-.fh-embed-wrap iframe{width:100%;height:1150px;border:0;display:block}
+.fh-embed-wrap{max-width:1020px;margin:auto;background:#fff;border:1px solid var(--border-g);border-radius:var(--radius);overflow:hidden;box-shadow:0 0 60px rgba(255,122,0,.1)}
+.fh-embed-wrap iframe{width:100%;height:560px;border:0;display:block}
 .book-alt{text-align:center;color:var(--muted);font-size:.9rem;margin-top:1rem}
 
 /* FEATURE LISTS (included / requirements) */
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
 .feat{background:var(--card);border:1.5px solid var(--border);border-radius:14px;padding:1.4rem 1.3rem;display:flex;gap:.9rem;align-items:flex-start;transition:border-color .2s,transform .2s}
 .feat:hover{border-color:var(--border-g);transform:translateY(-2px)}
-.feat .ic{flex:none;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;background:rgba(74,222,128,.15);color:var(--green)}
+.feat .ic{flex:none;width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;background:rgba(255,122,0,.15);color:var(--green)}
 .feat.req .ic{background:rgba(251,191,36,.12);color:#fbbf24}
 .feat p{color:var(--muted);font-size:.85rem}
 
@@ -115,7 +115,7 @@ h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--white)}
 .faq-list details p{color:var(--muted);margin-top:.6rem;font-size:.9rem}
 
 /* CTA BAND */
-.cta-band{background:linear-gradient(120deg,rgba(34,197,94,.12),rgba(34,197,94,.03)),var(--bg2);text-align:center;padding:3.5rem 1rem;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.cta-band{background:linear-gradient(120deg,rgba(255,122,0,.12),rgba(255,122,0,.03)),var(--bg2);text-align:center;padding:3.5rem 1rem;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .cta-band h2{margin-bottom:.6rem}
 .cta-band p{color:var(--muted);max-width:640px;margin:0 auto 1.4rem}
 .cta-band .note{font-size:.85rem;margin-top:.8rem;color:var(--muted)}
