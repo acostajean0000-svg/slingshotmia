@@ -57,3 +57,8 @@ footer p{color:#777;font-size:.82rem}
 .center{text-align:center}
 .muted{color:var(--muted)}
 @media(max-width:760px){.nav-wrap{justify-content:center}.hero{padding-top:2.5rem}}
+a.price-link{display:block;color:inherit}
+.price-card{transition:border-color .2s,transform .2s}
+a.price-link:hover .price-card{border-color:var(--accent);transform:translateY(-3px)}
+.fh-embed-wrap{background:#fff;border:1px solid #262626;border-radius:var(--radius);overflow:hidden}
+.fh-embed-wrap iframe{width:100%;height:1150px;border:0;display:block}
