@@ -1,0 +1,31 @@
+name: Fetch images
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download images
+        run: |
+          mkdir -p images
+          fail=0
+          while IFS='|' read -r name url; do
+            [ -z "$name" ] && continue
+            if curl -fsSL "$url" -o "images/$name"; then
+              echo "ok   $name"
+            else
+              echo "FAIL $name $url"
+              fail=1
+            fi
+          done < images.txt
+          ls -la images/
+          exit $fail
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add images
+          git commit -m "Add self-hosted images" || echo "nothing to commit"
+          git push
