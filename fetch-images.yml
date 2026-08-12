@@ -16,7 +16,7 @@ jobs:
             if curl -fsSL "$url" -o "images/$name"; then
               echo "ok   $name"
             else
-              echo "FAIL $name $url"
+              echo "FAIL $name  $url"
               fail=1
             fi
           done < images.txt
@@ -27,5 +27,5 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
           git add images
-          git commit -m "Add self-hosted images" || echo "nothing to commit"
+          git commit -m "Add self-hosted images (downloaded from GoDaddy CDN)" || echo "nothing to commit"
           git push
