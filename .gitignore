@@ -1,2 +1,5 @@
 .vercel
 .env*
+.DS_Store
+IMG_9439*.jpeg
+deploy-slingshotmia.command
