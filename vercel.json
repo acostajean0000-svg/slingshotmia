@@ -96,11 +96,6 @@
       "source": "/blog/:path*",
       "destination": "/guides",
       "permanent": true
-    },
-    {
-      "source": "/about/:path*",
-      "destination": "/about",
-      "permanent": true
     }
   ],
   "headers": [
