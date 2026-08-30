@@ -21,6 +21,86 @@
       "source": "/:section/f/:slug*",
       "destination": "/:section",
       "permanent": true
+    },
+    {
+      "source": "/jet-ski-sunny-isles-beach",
+      "destination": "/jet-ski-rentals-miami",
+      "permanent": true
+    },
+    {
+      "source": "/jetski-miami-rentals",
+      "destination": "/jet-ski-rentals-miami",
+      "permanent": true
+    },
+    {
+      "source": "/book-slingshot",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/book-us-now",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/book-us-now/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/slingshot-rental-in-miami",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/slingshot-rentals",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/slingshot-rental",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/polaris-slingshot-rental",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/slingshot-rental-near-me",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/suv-rental-miami",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/slingshot-gallery",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/slingshot-gallery/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/about/:path*",
+      "destination": "/about",
+      "permanent": true
     }
   ],
   "headers": [
