@@ -23,11 +23,6 @@
       "permanent": true
     },
     {
-      "source": "/:section/f/:slug*",
-      "destination": "/:section",
-      "permanent": true
-    },
-    {
       "source": "/jet-ski-sunny-isles-beach",
       "destination": "/jet-ski-rentals-miami",
       "permanent": true
@@ -100,6 +95,11 @@
     {
       "source": "/blog/:path*",
       "destination": "/guides",
+      "permanent": true
+    },
+    {
+      "source": "/:section/f/:slug*",
+      "destination": "/:section",
       "permanent": true
     }
   ],
