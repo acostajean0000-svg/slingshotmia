@@ -101,6 +101,21 @@
       "source": "/:section/f/:slug*",
       "destination": "/:section",
       "permanent": true
+    },
+    {
+      "source": "/f/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ols",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/ols/:path*",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "headers": [
