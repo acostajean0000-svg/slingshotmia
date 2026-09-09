@@ -116,6 +116,11 @@
       "source": "/ols/:path*",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/f.rss",
+      "destination": "/guides",
+      "permanent": true
     }
   ],
   "headers": [
