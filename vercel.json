@@ -121,6 +121,11 @@
       "source": "/f.rss",
       "destination": "/guides",
       "permanent": true
+    },
+    {
+      "source": "/boat-rentals",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "headers": [
