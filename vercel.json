@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/jet-ski-rentals-miami",
+      "destination": "https://www.jetskirentalmiamibeach.com/",
+      "permanent": true
+    },
+    {
       "source": "/miami-slingshot-rentals",
       "destination": "/",
       "permanent": true
@@ -24,12 +29,12 @@
     },
     {
       "source": "/jet-ski-sunny-isles-beach",
-      "destination": "/jet-ski-rentals-miami",
+      "destination": "https://www.jetskirentalmiamibeach.com/",
       "permanent": true
     },
     {
       "source": "/jetski-miami-rentals",
-      "destination": "/jet-ski-rentals-miami",
+      "destination": "https://www.jetskirentalmiamibeach.com/",
       "permanent": true
     },
     {
